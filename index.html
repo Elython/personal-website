@@ -1,12 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <h1>Baby steps</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div data-include="header.html"></div>
+  <main>
+    <section class="landing-page" aria-labelledby="landing-title">
+      <div class="landing-intro">
+        <div class="landing-heading" id="landing-title">
+          <h1>Andreas Kollias</h1>
+          <p class="landing-role">Computer Science Undergraduate</p>
+        </div>
+        <div class="scroll-cue">
+          <a class="scroll-hint" href="#about-me" aria-label="Scroll down to the rest of the page">
+            <span class="scroll-mouse" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div data-include="about.html"></div>
+    <div data-include="professional_work.html"></div>
+    <div data-include="personal_projects.html"></div>
+    <div data-include="education.html"></div>
+  </main>
+  <script src="./script.js" defer></script>
+</body>
+
 </html>
